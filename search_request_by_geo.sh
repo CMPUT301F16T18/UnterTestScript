@@ -1,4 +1,4 @@
-curl -XPOST http://cmput301.softwareprocess.es:8080/untertest/request/_search '
+curl -XPOST http://cmput301.softwareprocess.es:8080/untertest/request/_search -d '
 {
     "filtered": {
         "filter" : {

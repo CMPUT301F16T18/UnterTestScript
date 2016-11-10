@@ -1,4 +1,4 @@
-curl -XPOST http://cmput301.softwareprocess.es:8080/untert/request/9ce13093-2fde-449f-9096-4a63405b6652 '
+curl -XPOST http://cmput301.softwareprocess.es:8080/untert/request/9ce13093-2fde-449f-9096-4a63405b6652 -d '
 {
     "ID": "9ce13093-2fde-449f-9096-4a63405b6652",
     "route": {
@@ -12,9 +12,9 @@ curl -XPOST http://cmput301.softwareprocess.es:8080/untert/request/9ce13093-2fde
 }'
 
 
-curl -XPOST http://cmput301.softwareprocess.es:8080/untert/request/9ce13093-2fde-449f-9096-4a63405b6333 '
+curl -XPOST http://cmput301.softwareprocess.es:8080/untert/request/9ce13093-2fde-449f-9096-4a63405b6333 -d '
 {
-    "ID": "9ce13093-2fde-449f-9096-4a63405b6652",
+    "ID": "9ce13093-2fde-449f-9096-4a63405b6333",
     "route": {
         "destination": [-113.536804, 53.621],
         "origin": [-400.536804, 20.621002]
