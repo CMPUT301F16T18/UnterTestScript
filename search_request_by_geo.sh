@@ -1,11 +1,14 @@
 curl -XPOST http://cmput301.softwareprocess.es:8080/untertest/request/_search -d '
 {
-    "filtered": {
-        "filter" : {
-            "geo_distance": {
-                "distance": "10km",
-                "route.origin": [-113.536894, 100.621002]
-            }
-        }
-    }
+	"filter": {
+		"nested": {
+			"path": "route",
+			"filter": {
+				"geo_distance": {
+					"distance": "100km",
+					"origin": [-118.090099, 52.870981]
+				}
+			}
+		}
+	}
 }'
